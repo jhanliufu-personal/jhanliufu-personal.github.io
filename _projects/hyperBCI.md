@@ -1,6 +1,7 @@
 ---
 layout: project
 year: 2024
+location: University of Chicago
 title: Self-calibrating brain computer interface based on hypernetwork
 description: Unsupervised calibration of brain computer interface (BCI) models across individuals and time using hypernetworks.
 lab: "Henry Hoffmann"

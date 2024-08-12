@@ -11,7 +11,7 @@ title: Projects
 
     <ul>
       {% for project in site.projects %}
-        {% if project.year >= loc.start_year %}
+        {% if project.location == loc.location %}
           <li>
             <h3 class="entry-title">
               {{ project.title }}
