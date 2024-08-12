@@ -1,0 +1,48 @@
+---
+layout: default
+title: Projects
+---
+
+{% for loc in site.data.research_locations %}
+  <div class="container">
+    <div class="section-title">
+      {{ loc.start_year }}-{{ loc.end_year }}, {{ loc.location }}
+    </div>
+
+    <ul>
+      {% for project in site.projects %}
+        {% if project.year >= loc.start_year %}
+          <li>
+            <h3 class="entry-title">
+              {{ project.title }}
+            </h3>
+            <p style="font-size: 0.9em;">
+              {{ project.description }}
+            </p>
+
+            <div class="button-container">
+              <a href="{{ project.url }}" class="button">Project description</a>
+              {% assign lab_data = site.data.research_labs[project.lab] %}
+              <a href="{{ lab_data.lab_url }}" class="button">{{ project.lab }} lab</a>
+
+              {% if project.publications %}
+                {% assign relevant_pubs = project.publications %}
+                {% for pub in site.publications %}
+                  {% if relevant_pubs contains pub.slug %}
+                    {% assign name = pub.slug | split: '_' | first %}
+                    {% assign year = pub.slug | split: '_' | last %}
+                    <a href="{{ pub.url }}" class="button">{{ name }} et al. {{ year }}</a>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+
+              {% if project.written_report %}
+                <a href="{{ project.written_report }}" class="button">Written report</a>
+              {% endif %}
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
