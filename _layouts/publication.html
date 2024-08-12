@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article>
+  <h2>{{ page.title }}</h2>
+  <p><strong>Authors:</strong> {{ page.authors }}</p>
+  <p><strong>Journal:</strong> {{ page.journal }} ({{ page.year }})</p>
+  
+  <div class="button-container">
+    {% if page.link %}
+      <a href="{{ page.link }}" class="button">View Paper</a>
+    {% endif %}
+    {% if page.repository %}
+      <a href="{{ page.repository }}" class="button">View Repository</a>
+    {% endif %}
+  </div>
+
+  <hr>
+
+  {{ content }}
+</article>

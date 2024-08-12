@@ -1,0 +1,6 @@
+- category_keyword: first, co-first
+  category_label: Papers as first author or equal contributor
+- category_keyword: other
+  category_label: Other papers
+- category_keyword: conference
+  category_label: Conference publications

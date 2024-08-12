@@ -1,0 +1,137 @@
+.current {
+  color: maroon;
+}
+
+.button {
+  padding: 10px;
+  background-color: #D3D3D3; /* Light grey color */
+  color: rgb(32, 31, 31);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  color: white;
+  background-color: #800000; /* Maroon color on hover */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Container for centering */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  color: #333333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Section titles */
+.section-title {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.entry-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Paragraphs */
+p {
+  font-family: "Arial", sans-serif;
+}
+
+/* Links within text */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #800000; /* Maroon color */
+  font-weight: bold;
+}
+
+/* List items */
+li {
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+nav a:hover {
+  color: #800000; /* Maroon on hover */
+}
+
+/* For home page (index.html) */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  text-align: left;
+}
+
+.intro-container img {
+  max-width: 200px;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+.intro-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intro-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.intro-container a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.intro-container a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

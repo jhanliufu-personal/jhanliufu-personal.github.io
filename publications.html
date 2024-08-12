@@ -1,0 +1,40 @@
+---
+layout: default
+title: Publications
+---
+
+{% for category in site.data.publication_type %}
+  <div class="container">
+    <div class="section-title">
+      {{ category.category_label }}
+    </div>
+
+    <ul>
+      {% assign orders = category.category_keyword %}
+      
+      {% assign filtered_publications = site.publications | sort: "year" | reverse %}
+      {% for pub in filtered_publications %}
+        {% if orders contains pub.order %}
+          <li>
+            <!-- paper title -->
+            <h2 class="entry-title">
+              <a href="{{ pub.url }}">
+                {{ pub.title }}
+              </a>
+            </h2>
+            <!-- author list -->
+            <p style="font-size: 0.9em;">
+              <!-- <strong>Authors:</strong>  -->
+              {{ pub.authors }}
+            </p>
+            <!-- journal -->
+            <p style="font-size: 0.9em;">
+              <!-- <strong>Journal:</strong>  -->
+              {{ pub.journal }} ({{ pub.year }})
+            </p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
