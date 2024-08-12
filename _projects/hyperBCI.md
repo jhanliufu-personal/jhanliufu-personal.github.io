@@ -1,0 +1,9 @@
+---
+layout: project
+year: 2024
+title: Self-calibrating brain computer interface based on hypernetwork
+description: Unsupervised calibration of brain computer interface (BCI) models across individuals and time using hypernetworks.
+lab: "Henry Hoffmann"
+---
+## Abstract
+Deep learning-based brain computer interface (BCI) models are powerful algorithms for mapping brain activity to human interpretable concepts in real time. Such models have been used to develop neural prostheses to serve patients suffering from different disabilities. Due to the neural differences between individuals, BCI models need to be calibrated to perform accurately on a new individual. Due to the non-stationarity of neural activity, BCI models also need to be repeatedly adjusted to stay accurate throughout the usage of one user. However, the calibration of deep learning-based BCI models typically required supervised training, which involves a time-consuming and computationally heavy process of transferring the recorded brain data, manually labelling the data and optimizing the model using gradient descent. To address this challenge, we first trained a BCI model with varying amount of labelled training data using two baseline training strategies. We confirmed that both strategies require a substantial amount of labelled training data to reach optimal performance and are therefore unable to calibrate BCI model in real time. Next, we designed an unsupervised method for one-shot calibration. We used a hypernetwork architecture which was trained to extract features from the unlabeled brain data and generate near-optimal model parameters. The proposed calibration method requires only one forward pass of the recorded data and avoids gradient descent. It can enable self-calibrating BCI systems that maintain reliable performance in the long term without frequent external inspection.
