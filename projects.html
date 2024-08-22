@@ -10,17 +10,20 @@ title: Projects
     </div>
 
     <ul>
-      {% for project in site.projects %}
+      {% assign sorted_projects = site.projects | sort: 'year' %}
+      {% for project in sorted_projects %}
         {% if project.location == loc.location %}
           <li>
             <h3 class="entry-title">
-              {{ project.title }}
+              <a href="{{ project.url }}">
+                {{ project.title }}
+              </a>
             </h3>
-            <p style="font-size: 0.9em;">
+            <p style="font-size: 1.2em;">
               {{ project.description }}
             </p>
 
-            <div class="button-container">
+            <!-- <div class="button-container">
               <a href="{{ project.url }}" class="button">Project description</a>
               {% assign lab_data = site.data.research_labs[project.lab] %}
               <a href="{{ lab_data.lab_url }}" class="button">{{ project.lab }} lab</a>
@@ -39,7 +42,7 @@ title: Projects
               {% if project.written_report %}
                 <a href="{{ project.written_report }}" class="button">Written report</a>
               {% endif %}
-            </div>
+            </div> -->
           </li>
         {% endif %}
       {% endfor %}

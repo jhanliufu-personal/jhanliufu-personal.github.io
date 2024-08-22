@@ -2,9 +2,11 @@
 layout: project
 year: 2021
 location: University of Chicago
-title: Optimizing phase detection in diverse biological signals for phase-specific neurostimulation
-description: Evaluated and optimized phase detection algorithms for phase-specific neurostimulation
-lab: "Jai Yu"
+title: Phase-specific neurostimulation and prefrontal-hippocampal coherence
+description: "Optimized phase detection algorithms for phase-specific neurostimulation, and 
+used the technology to understand phase-locked cell activity in prefrontal-hippocampal coherence."
+lab: 
+- Jai Yu
 ---
-## Abstract
+## Project description
 CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC

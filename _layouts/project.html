@@ -3,12 +3,30 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-<!-- <p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
+<div class="button-container">
+  {% for lab in page.lab %}
+    {% assign lab_data = site.data.research_labs[lab] %}
+    <a href="{{ lab_data.lab_url }}" class="button">{{ lab }} lab</a>
+  {% endfor %}
+
+  {% if page.publications %}
+    {% assign relevant_pubs = page.publications %}
+    {% for pub in site.publications %}
+      {% if relevant_pubs contains pub.slug %}
+        {% assign name = pub.slug | split: '_' | first %}
+        {% assign year = pub.slug | split: '_' | last %}
+        <a href="{{ pub.url }}" class="button">{{ name }} et al. {{ year }}</a>
+      {% endif %}
+    {% endfor %}
   {% endif %}
-</p> -->
+
+  {% if page.slides %}
+    <a href="{{ page.slides }}" class="button">View slides</a>
+  {% endif %}
+
+  {% if page.written_report %}
+    <a href="{{ page.written_report }}" class="button">View report</a>
+  {% endif %}
+</div>
 
 {{ content }}
