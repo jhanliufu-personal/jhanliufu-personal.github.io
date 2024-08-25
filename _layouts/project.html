@@ -6,7 +6,7 @@ layout: default
 <div class="button-container">
   {% for lab in page.lab %}
     {% assign lab_data = site.data.research_labs[lab] %}
-    <a href="{{ lab_data.lab_url }}" class="button">{{ lab }} lab</a>
+    <a href="{{ lab_data.lab_url }}" class="button">View {{ lab }}'s labpage</a>
   {% endfor %}
 
   {% if page.publications %}
@@ -15,13 +15,17 @@ layout: default
       {% if relevant_pubs contains pub.slug %}
         {% assign name = pub.slug | split: '_' | first %}
         {% assign year = pub.slug | split: '_' | last %}
-        <a href="{{ pub.url }}" class="button">{{ name }} et al. {{ year }}</a>
+        <a href="{{ pub.url }}" class="button">View {{ name }} et al. {{ year }}</a>
       {% endif %}
     {% endfor %}
   {% endif %}
 
   {% if page.slides %}
     <a href="{{ page.slides }}" class="button">View slides</a>
+  {% endif %}
+
+  {% if page.repository %}
+    <a href="{{ page.repository }}" class="button">View code</a>
   {% endif %}
 
   {% if page.written_report %}

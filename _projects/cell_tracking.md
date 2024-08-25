@@ -3,17 +3,35 @@ layout: project
 year: 2023
 location: University of Chicago
 title: Barcoding and long-term tracking of cells using nitrogen-vacancy center as quantum sensor
-description: "Identified and tracked living cells by resolving orientation of multiple NV centers as unique barcodes."
+description: "Identified and tracked living cells by resolving spatial orientations of NV centers as unique barcodes."
 slides: "/assets/slides/20240129_celltracking_update.pdf"
+repository: "https://github.com/JhanLiufu/CellBarcoding2023_Maurer/tree/master"
 lab: 
 - Peter Maurer
 ---
 ## Project description
-CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC CLC
+<div style="font-size: 20px;">
+    <p>
+    Method to identify individual living cells in a group of cells can benefit wide-ranging experiments and applications. Such method will enable long-term tracking of individual cells and study of their changes over time. In this project, we explore a quantum sensing approach to individual cell identification. 
+    </p>
+    <p>
+    We inject nanodiamonds (NDs) into living cells and chemically bond the NDs into pairs. Nitrogen-vacancy (NV) centers on the NDs are optically addressable quantum sensors with resolvable spatial orientations. The relative angle bewteen each pair of NDs is randomly determined upon their bonding, and the angle will remain constant regardless of the pair's spatial location. The relative angles from all ND pairs in a cell forms a unique "barcode" that identifies the cell. 
+    </p>
+    <p>
+    We developed algorithms to (1) uniquely resolve the relative angle between ND pairs with two or more NV centers on each ND and (2) non-deterministically resolve the angle between ND pairs with one NV center on each ND. The non-deterministic algorithm can resolve the angle between 1-on-1 ND pairs within a 5-degree range using less than 10 measurements.
+    </p>
+</div>
 
 <div align="center">
-    <img src="/assets/images/celltracking_graphical_abstract.png" alt="Example Image" width="800"/>
-    <p><em>
-        Figure 1. Schematic of the proposed "barcode", a set of quantum sensors with unique spatial orientations.
-    </em></p>
+    <img src="/assets/images/celltracking_graphical_abstract_1.png" alt="Example Image" width="800"/>
+    <p class="figure_caption">
+        <strong>Figure 1.</strong> Nanodiamonds (NDs) as quantum sensors for cell identification. (A) The same group of cells have changed location over one week. Identifying and tracking individual cells is a non-trivial challenge. (B) NDs are chemically bonded into pairs. Each ND contains a nitrogen-vacancy (NV) center with unique spatial orientation. (C) The relative angle between each pair of NDs is randomly determined upon chemical bonding and will stay constant.
+    </p>
+<div>
+
+<div align="center">
+    <img src="/assets/images/celltracking_graphical_abstract_2.png" alt="Example Image" width="800"/>
+    <p class="figure_caption">
+        <strong>Figure 2.</strong> Schematic of the proposed "barcode" and an algorithm to resolve relative angle. (A) Each ND pair within a cell has a unique and constant relative angle between its two NVs. With <em><strong>n</strong></em> ND pairs, the cell is associated with a set of <em><strong>n</strong></em> unique angles, which we refer to as the cell's "barcode". (B) and (C) show an algorithm simulation of resolving the angle bewteen two example NVs. The estimated angle approaches the true angle with more measurements, and the error bound decreases simultaneously. 
+    </p>
 <div>
