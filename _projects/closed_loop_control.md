@@ -5,6 +5,7 @@ location: University of Chicago
 title: Phase-specific optogenetic stimulation and prefrontal-hippocampal coherence
 description: "Optimized phase detection algorithms for phase-specific neurostimulation, and 
 used the technology to understand prefrontal-hippocampal coherence."
+repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
 lab: 
 - Jai Yu
 ---
