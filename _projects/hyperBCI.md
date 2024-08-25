@@ -2,7 +2,7 @@
 layout: project
 year: 2024
 location: University of Chicago
-title: "Unsupervised domain adaptation, edge machine learning and self-calibrating brain computer interface"
+title: "HyperBCI: unsupervised domain adaptation, edge machine learning and self-calibrating brain computer interface"
 description: "Unsupervised calibration of brain computer interface (BCI) models across individuals and time using hypernetworks."
 slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
 lab: 
