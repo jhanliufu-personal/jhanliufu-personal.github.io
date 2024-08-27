@@ -6,6 +6,7 @@ title: Phase-specific optogenetic stimulation and prefrontal-hippocampal coheren
 description: "Optimized phase detection algorithms for phase-specific neurostimulation, and 
 used the technology to understand prefrontal-hippocampal coherence."
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
+publications: Liufu_2024a, Liufu_2024b
 lab: 
 - Jai Yu
 ---

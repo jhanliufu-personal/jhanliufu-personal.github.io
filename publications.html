@@ -23,9 +23,19 @@ title: Publications
               </a>
             </h2>
             <!-- author list -->
-            <p style="font-size: 1.2em;">
-              <!-- <strong>Authors:</strong>  -->
-              {{ pub.authors }}
+            <p style="font-size: 1.1em;">
+              {% assign authors = pub.authors | split: ", " %}
+              {% for author in authors %}
+                {% if author == "Mengzhan Liufu*" or author == "Mengzhan Liufu" %}
+                  <u>{{author}}</u>
+                {% else %}
+                  {{author}}
+                {% endif %}
+                {% if forloop.last == false %}, {% endif %}
+              {% endfor %}
+              {% if pub.order == "co-first" %}
+                . *equal contributors
+              {% endif %}
             </p>
             <!-- journal -->
             <p style="font-size: 1.2em;">

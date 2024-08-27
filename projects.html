@@ -10,7 +10,7 @@ title: Projects
     </div>
 
     <ul>
-      {% assign sorted_projects = site.projects | sort: 'year' %}
+      {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
       {% for project in sorted_projects %}
         {% if project.location == loc.location %}
           <li>

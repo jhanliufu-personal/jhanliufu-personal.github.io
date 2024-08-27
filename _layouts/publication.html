@@ -5,7 +5,16 @@ layout: default
 <article>
   <h2 class="entry-title">{{ page.title }}</h2>
   <p style="font-size: 1.2em;"><strong>Authors:</strong> {{ page.authors }}</p>
-  <p style="font-size: 1.2em;"><strong>Journal:</strong> {{ page.journal }} ({{ page.year }})</p>
+  <p style="font-size: 1.2em;">
+    <strong>
+        {% if page.order == "conference" %}
+            Conference:
+        {% else %}
+            Journal:
+        {% endif %}
+    </strong> 
+    {{ page.journal }} ({{ page.year }})
+  </p>
   
   <div class="button-container">
     {% if page.link %}

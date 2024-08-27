@@ -2,7 +2,7 @@
 layout: project
 year: 2023
 location: University of Chicago
-title: "DropConnect: Linear bottleneck architecture for RRAM fault-tolerant deep learning"
+title: "DropConnect: linear bottleneck architecture for RRAM fault-tolerant deep learning"
 description: "Explored a potential method to improve the robustness of deep learning models against the hardware faults on RRAM accelerator."
 written_report: "/assets/written_reports/drop_connect_report_24.pdf"
 repository: "https://github.com/JhanLiufu/DropConnect2023_Li"
