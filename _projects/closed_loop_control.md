@@ -17,7 +17,7 @@ lab:
     </p>
 
     <p>
-    In this project, we use phase-specific stimulation to entrain rhythmic neural activity in freely moving rats performing a spatial navigation task. We optogenetically stimulate the medial prefrontal cortex (mPFC) at specific phases of the hippocampal theta. We vary the target phase to answer whether the effects are specific to certain phases. To ensure consistent and accurate stimulation, we identified signal properties that affect stimulation performance and developed a method to efficiently optimize the performance for each animal.
+    In this project, we use phase-specific stimulation to entrain rhythmic neural activity in freely moving rats performing a spatial navigation task. We optogenetically stimulate the medial prefrontal cortex (mPFC) at specific phases of the hippocampal theta. We vary the target phase to answer whether the effects are specific to certain phases. To ensure consistent and accurate stimulation, we identified signal properties that affect stimulation performance and developed a method to efficiently optimize the performance for each animal (<a href="https://jhanliufu.github.io/publications/Liufu_2024a.html">Liufu et.al 2024a</a>, <a href="https://jhanliufu.github.io/publications/Liufu_2024b.html">Liufu et.al 2024b</a>).
     </p>
 </div>
 
