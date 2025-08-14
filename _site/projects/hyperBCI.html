@@ -1,15 +1,32 @@
----
-layout: project
-year: 2024
-location: UChicago
-title: "HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation"
-description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
-slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
-lab: 
-  - Henry Hoffmann
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/projects.html" >Projects</a>
+  
+    <a href="/publications.html" >Publications</a>
+  
+    <a href="/awards.html" >Awards</a>
+  
+</nav>
+      <h1>HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation</h1>
 
-## Project description
+<!-- <p>
+  14 Aug 2025
+  
+  
+</p> -->
+
+<h2 id="project-description">Project description</h2>
 <div style="font-size: 20px;">
     <!-- <p>
     Deep learning (DL) based brain computer interface (BCI) models are powerful algorithms for mapping brain activity to human interpretable concepts in real time. Such models have been used to develop neural prostheses to serve patients suffering from different disabilities. Due to the neural differences between individuals, BCI models need to be calibrated to perform accurately on a new user. Due to the non-stationarity of neural activity, BCI models also need to be repeatedly adjusted to stay accurate throughout the usage of one user. Both are examples of the broader problem of <strong>unsupervised domain adaptation (UDA)</strong> in machine learning. Existing UDA methods often require labeled data from new users for supervised training or large amounts of unlabeled data from both existing and new users for iterative, computationally intensive alignment processes. These data requirements pose significant challenges for real-time BCI applications on edge devices like brain implantable chips.
@@ -31,10 +48,15 @@ lab:
 </div>
 
 <div align="center">
-    <img src="/assets/images/hyperBCI_graphical_abstract.png" alt="Example Image" width="800"/>
+    <img src="/assets/images/hyperBCI_graphical_abstract.png" alt="Example Image" width="800" />
     <p style="text-align: left; font-size: 16px;">
         <strong>Figure 1.</strong> Schematic of HyperBCI, a hypernetwork-based self-calibrating BCI system. The primary network and the hypernetwork are jointly pre-trained on a pool of existing users. During inference time, unsupervised adaptation is achieved through the hypernetwork which is consisted of the encoder and the weight generator. The encoder processes unlableled data from new user and generates an embedding, which instructs the weight generator to produce near-optimal model weights for the new subject.
     </p>
 <div>
 
 
+</div></div>
+
+    </div>
+  </body>
+</html>
