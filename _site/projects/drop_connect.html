@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DropConnect: linear bottleneck architecture for RRAM fault-tolerant deep learning</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-tabs">
+        <nav>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/projects.html" >Projects</a>
+  
+    <a href="/publications.html" >Publications</a>
+  
+    <a href="/awards.html" >Awards</a>
+  
+</nav>
+      </div>
+      <h1>DropConnect: linear bottleneck architecture for RRAM fault-tolerant deep learning</h1>
+
+<div class="button-container">
+  
+    
+    <a href="https://people.cs.uchicago.edu/~yanjingl/" class="button">View Yanjing Li's labpage</a>
+  
+
+  
+
+  
+
+  
+    <a href="https://github.com/JhanLiufu/DropConnect2023_Li" class="button">View code</a>
+  
+
+  
+    <a href="/assets/written_reports/drop_connect_report_24.pdf" class="button">View report</a>
+  
+</div>
+
+<h2 id="project-description">Project description</h2>
+<div style="font-size: 20px;">
+    <p>
+    Resistive random-access memory (RRAM) has emerged as an efficient hardware
+    platform for deep learning applications, but its currently high defect rate limits its practical
+    applications. Previous work established Drop-Connect as an efficient model training method to
+    make models tolerant to random faults, and it was hinted that the linear bottleneck architecture
+    made MobileNetV2 more robust to random faults compared to other models.
+    </p> 
+
+    <p>
+    In this study, we investigated this hypothetical fault-tolerance property of linear bottleneck with two experiments. First, we built mini mobilenets out of a small number of linear bottlenecks and quantified their performance on MNIST digit classification task under various weight drop rate. Then, we modified ResNet20 by replacing parts of the model with linear bottlenecks and quantified the performance of the modified model on CIFAR10 under random weight drops. 
+    </p>
+
+    <p>
+    We concluded that linear bottleneck doesn’t have significantly advantageous fault tolerance compared to other architectures. Further investigation into the architectural nuances of MobileNetV2 is needed to understand its robustness, and other machine learning and system techniques may be applied to develop DNN applications with reliable RRAM fault tolerance.
+    </p>
+</div>
+
+<div align="center">
+    <img src="/assets/images/dropconnect_graphical_abstract.png" alt="Example Image" width="800" />
+    <p style="text-align: left; font-size: 16px;">
+        <strong>Figure 1.</strong> Schematics for architectures used in experiments. (A) A Basic Block of ResNet consists of two 3x3 convolutions and a shortcut connection. (B) A linear bottleneck of MobileNetV2 has a 3x3 depthwise convolution, a 1x1 pointwise convolution and a shortcut connection (inverted residual). (C) Mini mobilenets are small models with varying number of linear bottlenecks connected to a fully connected layer for MNIST digit classification. (D) ResNet20 has nine Basic Blocks (18 3x3 convolutions), and each convolution could technically be replaced by a linear bottleneck.   
+    </p>
+<div>
+</div></div>
+
+    </div>
+  </body>
+</html>
+
