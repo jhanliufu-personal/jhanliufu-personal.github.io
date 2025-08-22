@@ -3,23 +3,29 @@ layout: default
 title: Awards
 ---
 
-{% for award in site.data.awards %}
-    <div class="container">
-        <div class="entry-title">
-            {% if award.link %}
-                <a href="{{ award.link }}">{{ award.name }}, {{ award.year }}</a>
-            {% else %}
-                {{ award.name }}, {{ award.year }}
+<div class="content-section">
+    <div class="section-title">Awards & Recognition</div>
+    
+    {% for award in site.data.awards %}
+        <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
+            <h3 class="entry-title">
+                {% if award.link %}
+                    <a href="{{ award.link }}">{{ award.name }}</a>
+                {% else %}
+                    {{ award.name }}
+                {% endif %}
+            </h3>
+            <p class="text-muted mb-2">{{ award.year }}</p>
+            <!-- show mentor's name if any -->
+            {% assign mentor = award.mentor %}
+            {% if mentor %}
+                <p>
+                    <strong>Mentor:</strong> 
+                    <a href="{{ site.data.research_labs[mentor].lab_url }}">
+                        {{ mentor }}
+                    </a>   
+                </p>
             {% endif %}
         </div>
-        <!-- show mentor's name if any -->
-        {% assign mentor = award.mentor %}
-        {% if mentor %}
-            Mentor: 
-            <a href="{{ site.data.research_labs[mentor].lab_url }}" 
-            style="color: #007BFF; font-weight: bold;">
-                {{ mentor }}
-            </a>   
-        {% endif %}
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>

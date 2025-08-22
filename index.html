@@ -2,65 +2,59 @@
 layout: default
 title: Jhan Liufu
 ---
-<body>
-    <!-- Main introduction box, with headshot photo on the left -->
-    <div class="intro-container">
-        <img src="/assets/images/liufu_photo.png" alt="Your Photo">
-        <div>
-            <h1>Hi, I'm Mengzhan (Jhan) Liufu!</h1>
-            <p>
-                I am an incoming PhD student at California Institute of Technology (Caltech).
-            </p>
-            <p>
-                <!-- I have worked on various research <a href="/projects.html">projects</a> and produced 
-                <a href="/publications.html">publications</a> since 2020 -->
-
-                I was a college student at the University of Chicago (UChicago). I got degrees in Computer Science, Physics
-                and Economics. I was mentored by 
-                Professor <a href="{{ site.data.research_labs['Jai Yu'].lab_url }}">Jai Yu</a>,
-                Professor <a href="{{ site.data.research_labs['Henry Hoffmann'].lab_url }}">Henry Hoffmann</a>,
-                Professor <a href="{{ site.data.research_labs['Bozhi Tian'].lab_url }}">Bozhi Tian</a> 
-                and other amazing scholars. 
-            </p>
-            <p>Here's my <a href="assets/cv/Mengzhan Liufu CV 20250326.pdf">CV</a>. </p>
-        </div>
-    </div>
-    <div class="container">
-        <!-- Academic interests -->
-        <div class="section-title">Academic interests</div>
-            <p style="max-width: 900px; font-size: 1.2em; line-height: 1.6;">
-                I am experienced with machine learning, neuromodulation algorithms and system neuroscience. 
-                I am particularly interested in the following topics:
-                <!-- Enumerate specific interests -->
-                <li>Multimodal machine learning for healthcare </li>
-                <li>Self-supervised learning and few-shot learning </li>
-                <li>Interaction with the brain through AI-empowered implants and genetic modulation approaches</li>
-            </p>
-        </div>
-    <div class="container">
-        <!-- Academic interests, grad school app -->
-        <div class="section-title">Contacts</div>
-        <p style="max-width: 900px; font-size: 1.2em; line-height: 1.6;">
-            <li>Address: 940E 57th, 60637, Chicago IL</li>
-            <li>Email: mliufu@caltech.edu</li>
-            <li>
-                <a href="https://www.linkedin.com/in/mengzhan-liufu-97178122b/" 
-                style="color: #007BFF; font-weight: bold;">
-                    LinkedIn page
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/jhanliufu-personal" 
-                style="color: #007BFF; font-weight: bold;">
-                    Github page
-                </a>
-            </li>
-            <li>
-                <a href="https://scholar.google.com.au/citations?user=2fg2CQsAAAAJ&hl=zh-CN&oi=sra" 
-                style="color: #007BFF; font-weight: bold;">
-                    Google scholar
-                </a>
-            </li>
+<!-- Main introduction section -->
+<div class="intro-container">
+    <img src="/assets/images/liufu_photo.png" alt="Mengzhan Liufu">
+    <div>
+        <h1>Hi, I'm Mengzhan (Jhan) Liufu!</h1>
+        <p>
+            I am an incoming PhD student at California Institute of Technology (Caltech).
         </p>
+        <p>
+            I was a college student at the University of Chicago (UChicago). I got degrees in Computer Science, Physics
+            and Economics. I was mentored by 
+            Professor <a href="{{ site.data.research_labs['Jai Yu'].lab_url }}">Jai Yu</a>,
+            Professor <a href="{{ site.data.research_labs['Henry Hoffmann'].lab_url }}">Henry Hoffmann</a>,
+            Professor <a href="{{ site.data.research_labs['Bozhi Tian'].lab_url }}">Bozhi Tian</a> 
+            and other amazing scholars. 
+        </p>
+        <div class="button-container">
+            <a href="assets/cv/Mengzhan Liufu CV 20250326.pdf" class="button">Download CV</a>
+            <a href="/projects.html" class="button">View Projects</a>
+        </div>
     </div>
-</body>
+</div>
+
+<!-- Academic interests section -->
+<div class="content-section">
+    <div class="section-title">Academic Interests</div>
+    <p>
+        I am experienced with machine learning, neuromodulation algorithms and system neuroscience. 
+        I am particularly interested in the following topics:
+    </p>
+    <ul>
+        <li>Multimodal machine learning for healthcare</li>
+        <li>Self-supervised learning and few-shot learning</li>
+        <li>Interaction with the brain through AI-empowered implants and genetic modulation approaches</li>
+    </ul>
+</div>
+
+<!-- Contact section -->
+<div class="content-section">
+    <div class="section-title">Contact</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div>
+            <h4>Address</h4>
+            <p class="text-muted">940E 57th, 60637, Chicago IL</p>
+        </div>
+        <div>
+            <h4>Email</h4>
+            <p><a href="mailto:mliufu@caltech.edu">mliufu@caltech.edu</a></p>
+        </div>
+    </div>
+    <div class="button-container mt-3">
+        <a href="https://www.linkedin.com/in/mengzhan-liufu-97178122b/" class="button">LinkedIn</a>
+        <a href="https://github.com/jhanliufu-personal" class="button">GitHub</a>
+        <a href="https://scholar.google.com.au/citations?user=2fg2CQsAAAAJ&hl=zh-CN&oi=sra" class="button">Google Scholar</a>
+    </div>
+</div>
