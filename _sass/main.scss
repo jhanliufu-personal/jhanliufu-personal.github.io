@@ -207,19 +207,19 @@ ul, ol {
   }
 }
 
-// Buttons
+// Buttons - using smaller size as default
 .button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: var(--accent-primary);
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   position: relative;
   overflow: hidden;
   
@@ -257,6 +257,18 @@ ul, ol {
     color: white;
     border-color: var(--text-color);
   }
+}
+
+// Large button variant (for special cases)
+.button-large {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+
+// Keep button-small class for backwards compatibility
+.button-small {
+  // No additional styling needed since default is now small
 }
 
 .button-container {

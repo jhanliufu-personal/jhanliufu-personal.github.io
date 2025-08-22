@@ -1,10 +1,11 @@
 ---
 layout: project
-year: 2024
+year: 2025
 location: University of Chicago
 title: "HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation"
 description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
 slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
+repository: "https://github.com/jhanliufu-personal/HypernetBCI"
 lab: 
   - Henry Hoffmann
 ---

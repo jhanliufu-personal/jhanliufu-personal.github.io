@@ -2,30 +2,33 @@
 layout: default
 ---
 
-<article>
-  <h2 class="entry-title">{{ page.title }}</h2>
-  <p style="font-size: 1.2em;"><strong>Authors:</strong> {{ page.authors }}</p>
-  <p style="font-size: 1.2em;">
-    <strong>
-        {% if page.order == "conference" %}
-            Conference:
-        {% else %}
-            Journal:
-        {% endif %}
-    </strong> 
-    {{ page.journal }} ({{ page.year }})
-  </p>
+<div class="content-section">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="mb-3">
+    <p><strong>Authors:</strong> {{ page.authors }}</p>
+    <p>
+      <strong>
+          {% if page.order == "conference" %}
+              Conference:
+          {% else %}
+              Journal:
+          {% endif %}
+      </strong> 
+      <em>{{ page.journal }}</em> ({{ page.year }})
+    </p>
+  </div>
   
   <div class="button-container">
     {% if page.link %}
-      <a href="{{ page.link }}" class="button">View paper</a>
+      <a href="{{ page.link }}" class="button button-small">📄 View Paper</a>
     {% endif %}
     {% if page.repository %}
-      <a href="{{ page.repository }}" class="button">View code</a>
+      <a href="{{ page.repository }}" class="button button-small">💻 View Code</a>
     {% endif %}
   </div>
+</div>
 
-  <hr>
-
+<div class="content-section">
   {{ content }}
-</article>
+</div>

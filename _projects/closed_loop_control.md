@@ -1,10 +1,9 @@
 ---
 layout: project
-year: 2021
+year: 2024
 location: University of Chicago
-title: Phase-specific optogenetic stimulation and prefrontal-hippocampal coherence
-description: "Optimized phase detection algorithms for phase-specific neurostimulation, and 
-used the technology to understand prefrontal-hippocampal coherence."
+title: "CLC: Phase-specific optogenetic stimulation and prefrontal-hippocampal coherence"
+description: "Optimized phase detection algorithms for phase-specific neurostimulation, and used the technology to understand prefrontal-hippocampal coherence."
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
 publications: Liufu_2024a, Liufu_2024b
 lab: 

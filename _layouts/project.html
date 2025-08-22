@@ -1,36 +1,44 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="content-section">
+  <h1>{{ page.title }}</h1>
+  
+  {% if page.description %}
+    <p class="text-muted mb-3">{{ page.description }}</p>
+  {% endif %}
 
-<div class="button-container">
-  {% for lab in page.lab %}
-    {% assign lab_data = site.data.research_labs[lab] %}
-    <a href="{{ lab_data.lab_url }}" class="button">View {{ lab }}'s labpage</a>
-  {% endfor %}
-
-  {% if page.publications %}
-    {% assign relevant_pubs = page.publications %}
-    {% for pub in site.publications %}
-      {% if relevant_pubs contains pub.slug %}
-        {% assign name = pub.slug | split: '_' | first %}
-        {% assign year = pub.slug | split: '_' | last %}
-        <a href="{{ pub.url }}" class="button">View {{ name }} et al. {{ year }}</a>
-      {% endif %}
+  <div class="button-container">
+    {% for lab in page.lab %}
+      {% assign lab_data = site.data.research_labs[lab] %}
+      <a href="{{ lab_data.lab_url }}" class="button button-small">{{ lab }} Lab</a>
     {% endfor %}
-  {% endif %}
 
-  {% if page.slides %}
-    <a href="{{ page.slides }}" class="button">View slides</a>
-  {% endif %}
+    {% if page.publications %}
+      {% assign relevant_pubs = page.publications %}
+      {% for pub in site.publications %}
+        {% if relevant_pubs contains pub.slug %}
+          {% assign name = pub.slug | split: '_' | first %}
+          {% assign year = pub.slug | split: '_' | last %}
+          <a href="{{ pub.url }}" class="button button-small">📄 {{ name }} et al. {{ year }}</a>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
 
-  {% if page.repository %}
-    <a href="{{ page.repository }}" class="button">View code</a>
-  {% endif %}
+    {% if page.slides %}
+      <a href="{{ page.slides }}" class="button button-small">📊 View Slides</a>
+    {% endif %}
 
-  {% if page.written_report %}
-    <a href="{{ page.written_report }}" class="button">View report</a>
-  {% endif %}
+    {% if page.repository %}
+      <a href="{{ page.repository }}" class="button button-small">💻 View Code</a>
+    {% endif %}
+
+    {% if page.written_report %}
+      <a href="{{ page.written_report }}" class="button button-small">📖 View Report</a>
+    {% endif %}
+  </div>
 </div>
 
-{{ content }}
+<div class="content-section">
+  {{ content }}
+</div>
