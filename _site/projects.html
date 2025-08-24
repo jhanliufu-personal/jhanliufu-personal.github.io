@@ -34,11 +34,16 @@
         <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
           <h3 class="entry-title">
             <a href="/projects/hyperBCI.html">
-              HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation
+              Rapid online adaptation of DNNs with Hypernetwork and Contrastive Learning
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs.
+            <ul>
+  <li>Built <strong>HyperUDA</strong>, a zero-shot domain adaptation framework for DNNs using hypernetworks</li>
+  <li>Built <strong>SupportNet</strong>, a few-shot adaptation framework using contrastive learning and attention</li>
+  <li>Deployed on <strong>MSP430</strong> to build self-calibrating brain-computer interface (<strong>BCI</strong>)</li>
+</ul>
+
           </p>
 
           <div class="button-container">
@@ -51,8 +56,6 @@
 
             
 
-            
-              <a href="/assets/slides/20240816_ai_for_bio_presentation.pdf" class="button button-small">📊 Slides</a>
             
 
             
@@ -67,12 +70,53 @@
       
         <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
           <h3 class="entry-title">
-            <a href="/projects/closed_loop_control.html">
-              CLC: Phase-specific optogenetic stimulation and prefrontal-hippocampal coherence
+            <a href="/projects/artificial_vision.html">
+              Pixel-less artificial vision with hot-carrier bioelectronic interfaces
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Optimized phase detection algorithms for phase-specific neurostimulation, and used the technology to understand prefrontal-hippocampal coherence.
+            <ul>
+  <li>Developed ML methods for pixel-less pattern recognition and cursor tracking</li>
+  <li>Helped design and fabricate hot-carrier optoelectronic materials</li>
+</ul>
+
+          </p>
+
+          <div class="button-container">
+            <a href="/projects/artificial_vision.html" class="button button-small">Details</a>
+            
+            
+              
+              <a href="https://tianlab.uchicago.edu/" class="button button-small">Bozhi Tian Lab</a>
+            
+
+            
+
+            
+
+            
+              <a href="" class="button button-small">💻 Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+    
+      
+        <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
+          <h3 class="entry-title">
+            <a href="/projects/closed_loop_control.html">
+              Online phase estimation for phase-locked brain stimulation
+            </a>
+          </h3>
+          <p class="text-muted mb-2">
+            <ul>
+  <li>Optimized and evaluated Fourier-based online phase estimation algorithms</li>
+  <li>Built <strong>CLC</strong>, a closed-loop brain stimulation system supporting multiple Fourier-based phase estimators</li>
+  <li>Used in <strong>optogenetic</strong> brain stimulation experiments to study prefrontal-hippocampal coordination</li>
+</ul>
+
           </p>
 
           <div class="button-container">
@@ -83,29 +127,6 @@
               <a href="https://voices.uchicago.edu/jaiyu/" class="button button-small">Jai Yu Lab</a>
             
 
-            
-              
-              
-                
-              
-                
-              
-                
-                  
-                  
-                  <a href="/publications/Liufu_2024a.html" class="button button-small">📄 Liufu 2024a</a>
-                
-              
-                
-                  
-                  
-                  <a href="/publications/Liufu_2024b.html" class="button button-small">📄 Liufu 2024b</a>
-                
-              
-                
-              
-                
-              
             
 
             
@@ -127,7 +148,11 @@
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Designed dual-tree neural network with discrete cosine transform (DCT) layers for online phase estimation. Applied to neural oscillations and tested in real-time in vivo experiments
+            <ul>
+  <li>Built <strong>DCTNet</strong>, a dual-tree DNN with discrete cosine transform (DCT) layers for online phase estimation.</li>
+  <li>Deployed DCTNet on an <strong>FPGA</strong> for real-time validation.</li>
+</ul>
+
           </p>
 
           <div class="button-container">
@@ -155,11 +180,15 @@
         <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
           <h3 class="entry-title">
             <a href="/projects/cell_tracking.html">
-              Barcoding and long-term tracking of cells using nitrogen-vacancy center as quantum sensor
+              “Barcoding” cells using nanodiamond quantum sensor
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Identified and tracked living cells by resolving spatial orientations of NV centers as unique barcodes.
+            <ul>
+  <li>Built an algorithm to identify and track living cells using paired nanodiamonds as quantum sensor</li>
+  <li>Works by resolving the set of angles between paired nanodiamonds</li>
+</ul>
+
           </p>
 
           <div class="button-container">
@@ -189,11 +218,15 @@
         <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
           <h3 class="entry-title">
             <a href="/projects/drop_connect.html">
-              DropConnect: linear bottleneck architecture for RRAM fault-tolerant deep learning
+              DropConnect: Training Fault-tolerant DNNs for fault-prone RRAM deployment
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Explored a potential method to improve the robustness of deep learning models against the hardware faults on RRAM accelerator.
+            <ul>
+  <li>Developed <strong>DropConnect</strong>, a framework for training RRAM-fault tolerant DNNs</li>
+  <li>Injected Linear Bottleneck layer into DNNs to improve fault tolerance</li>
+</ul>
+
           </p>
 
           <div class="button-container">
@@ -212,8 +245,6 @@
               <a href="https://github.com/JhanLiufu/DropConnect2023_Li" class="button button-small">💻 Code</a>
             
 
-            
-              <a href="/assets/written_reports/drop_connect_report_24.pdf" class="button button-small">📖 Report</a>
             
           </div>
         </div>
@@ -241,6 +272,8 @@
       
     
       
+    
+      
         <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
           <h3 class="entry-title">
             <a href="/projects/sensorimotor_adaptation.html">
@@ -248,7 +281,8 @@
             </a>
           </h3>
           <p class="text-muted mb-2">
-            Investigated and theorized the interaction between implicit sensorimotor adaptation and explicit motor task learning.
+            <p>Investigated and theorized the interaction between implicit sensorimotor adaptation and explicit motor task learning.</p>
+
           </p>
 
           <div class="button-container">
@@ -259,33 +293,6 @@
               <a href="http://juanchenpsy.scnu.edu.cn/" class="button button-small">Juan Chen Lab</a>
             
 
-            
-              
-              
-                
-                  
-                  
-                  <a href="/publications/Deng_2022.html" class="button button-small">📄 Deng 2022</a>
-                
-              
-                
-                  
-                  
-                  <a href="/publications/Deng_2023.html" class="button button-small">📄 Deng 2023</a>
-                
-              
-                
-              
-                
-              
-                
-              
-                
-                  
-                  
-                  <a href="/publications/Xu_2023.html" class="button button-small">📄 Xu 2023</a>
-                
-              
             
 
             

@@ -1,7 +1,7 @@
 ---
 layout: publication
 year: 2024
-journal: bioRxiv
+journal: Journal of Neural Engineering
 link: "https://www.biorxiv.org/content/10.1101/2024.08.24.609522v1"
 authors: Mengzhan Liufu, Zachary M. Leveroni, Sameera Shridhar, Nan Zhou, Jai Y. Yu#
 order: first

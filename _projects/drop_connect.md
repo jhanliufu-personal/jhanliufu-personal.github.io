@@ -2,9 +2,11 @@
 layout: project
 year: 2023
 location: University of Chicago
-title: "DropConnect: linear bottleneck architecture for RRAM fault-tolerant deep learning"
-description: "Explored a potential method to improve the robustness of deep learning models against the hardware faults on RRAM accelerator."
-written_report: "/assets/written_reports/drop_connect_report_24.pdf"
+title: "DropConnect: Training Fault-tolerant DNNs for fault-prone RRAM deployment"
+description: |
+    - Developed **DropConnect**, a framework for training RRAM-fault tolerant DNNs
+    - Injected Linear Bottleneck layer into DNNs to improve fault tolerance
+# written_report: "/assets/written_reports/drop_connect_report_24.pdf"
 repository: "https://github.com/JhanLiufu/DropConnect2023_Li"
 lab: 
 - Yanjing Li

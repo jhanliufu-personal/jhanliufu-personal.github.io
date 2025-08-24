@@ -2,9 +2,13 @@
 layout: project
 year: 2025
 location: University of Chicago
-title: "HyperLoRA: Unsupervised Adaptation via Low-Rank Hypernetwork Weight Generation"
-description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
-slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
+title: "Rapid online adaptation of DNNs with Hypernetwork and Contrastive Learning"
+# description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
+description: |
+    - Built **HyperUDA**, a zero-shot domain adaptation framework for DNNs using hypernetworks
+    - Built **SupportNet**, a few-shot adaptation framework using contrastive learning and attention
+    - Deployed on **MSP430** to build self-calibrating brain-computer interface (**BCI**)
+# slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
 repository: "https://github.com/jhanliufu-personal/HypernetBCI"
 lab: 
   - Henry Hoffmann

@@ -1,18 +1,17 @@
 ---
 layout: project
-year: 2023
+year: 2024
 location: University of Chicago
-title: “Barcoding” cells using nanodiamond quantum sensor
+title: Pixel-less artificial vision with hot-carrier bioelectronic interfaces
 description: |
-    - Built an algorithm to identify and track living cells using paired nanodiamonds as quantum sensor
-    - Works by resolving the set of angles between paired nanodiamonds
-slides: "/assets/slides/20240129_celltracking_update.pdf"
-repository: "https://github.com/JhanLiufu/CellBarcoding2023_Maurer/tree/master"
+    - Developed ML methods for pixel-less pattern recognition and cursor tracking
+    - Helped design and fabricate hot-carrier optoelectronic materials
+repository: ""
 lab: 
-- Peter Maurer
+- Bozhi Tian
 ---
 ## Project description
-<div style="font-size: 20px;">
+<!-- <div style="font-size: 20px;">
     <p>
     Method to identify individual living cells in a group of cells can benefit wide-ranging experiments and applications. Such method will enable long-term tracking of individual cells and study of their changes over time. In this project, we explore a quantum sensing approach to individual cell identification. 
     </p>
@@ -22,9 +21,9 @@ lab:
     <p>
     We developed algorithms to (1) uniquely resolve the relative angle between ND pairs with two or more NV centers on each ND and (2) non-deterministically resolve the angle between ND pairs with one NV center on each ND. The non-deterministic algorithm can resolve the angle between 1-on-1 ND pairs within a 5-degree range using less than 10 measurements.
     </p>
-</div>
+</div> -->
 
-<div align="center">
+<!-- <div align="center">
     <img src="/assets/images/celltracking_graphical_abstract_1.png" alt="Example Image" width="800"/>
     <p class="figure_caption">
         <strong>Figure 1.</strong> Nanodiamonds (NDs) as quantum sensors for cell identification. (A) The same group of cells have changed location over one week. Identifying and tracking individual cells is a non-trivial challenge. (B) NDs are chemically bonded into pairs. Each ND contains a nitrogen-vacancy (NV) center with unique spatial orientation. (C) The relative angle between each pair of NDs is randomly determined upon chemical bonding and will stay constant.
@@ -36,4 +35,4 @@ lab:
     <p class="figure_caption">
         <strong>Figure 2.</strong> Schematic of the proposed "barcode" and an algorithm to resolve relative angle. (A) Each ND pair within a cell has a unique and constant relative angle between its two NVs. With <em><strong>n</strong></em> ND pairs, the cell is associated with a set of <em><strong>n</strong></em> unique angles, which we refer to as the cell's "barcode". (B) and (C) show an algorithm simulation of resolving the angle bewteen two example NVs. The estimated angle approaches the true angle with more measurements, and the error bound decreases simultaneously. 
     </p>
-<div>
+<div> -->

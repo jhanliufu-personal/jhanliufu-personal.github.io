@@ -2,10 +2,13 @@
 layout: project
 year: 2024
 location: University of Chicago
-title: "CLC: Phase-specific optogenetic stimulation and prefrontal-hippocampal coherence"
-description: "Optimized phase detection algorithms for phase-specific neurostimulation, and used the technology to understand prefrontal-hippocampal coherence."
+title: "Online phase estimation for phase-locked brain stimulation"
+description: |
+    - Optimized and evaluated Fourier-based online phase estimation algorithms
+    - Built **CLC**, a closed-loop brain stimulation system supporting multiple Fourier-based phase estimators
+    - Used in **optogenetic** brain stimulation experiments to study prefrontal-hippocampal coordination
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
-publications: Liufu_2024a, Liufu_2024b
+# publications: Liufu_2024a, Liufu_2024b
 lab: 
 - Jai Yu
 ---

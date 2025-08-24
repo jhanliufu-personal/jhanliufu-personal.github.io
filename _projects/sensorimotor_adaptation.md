@@ -5,7 +5,7 @@ location: Guangzhou, China
 title: Neural correlates of implicit and explicit sensorimotor learning
 description: Investigated and theorized the interaction between implicit sensorimotor adaptation and explicit motor task learning.
 repository: "https://github.com/JhanLiufu/ImplicitAdaptation2021_Chen"
-publications: Deng_2022, Deng_2023, Xu_2023
+# publications: Deng_2022, Deng_2023, Xu_2023
 lab: 
 - Juan Chen
 ---
