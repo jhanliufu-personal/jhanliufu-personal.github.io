@@ -2,7 +2,7 @@
 layout: project
 year: 2025
 location: University of Chicago
-title: "Rapid online adaptation of DNNs with Hypernetwork and Contrastive Learning"
+title: "On-the-fly DNN adaptation via hypernetwork and contrastive learning"
 # description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
 description: |
     - Built **HyperUDA**, a zero-shot domain adaptation framework for DNNs using hypernetworks
@@ -24,14 +24,17 @@ lab:
     We deploy HyperBCI on an <strong>FPGA</strong>-based neural implant and achieve closed-loop and low-power operation using <strong>TinyML</strong> techniques. The implant will be implanted into a freely behaving rodent to demonstrate its potential for real-life applications. HyperBCI will enable self-calibrating BCI systems that self-calibrate and thus maintain reliable performance through the long run.
     </p> -->
     <p>
-    Modern deep learning models often face significant performance drops when deployed in new domains unseen during training. To address this, we propose a general-purpose <strong>unsupervised adaptation</strong> framework that combines Low-Rank Adaptation (<strong>LoRA</strong>) with <strong>hypernetwork</strong>. Our architecture takes the latent embedding of unlabeled data from a new domain, feeds it into a hypernetwork, and generates the LoRA adapter for a pre-trained base model. Our architecture achieves rapid adaptation in a single forward pass. It does not require iterative optimization or large volumes of paired source-target data. This makes it highly suitable for time-critical or resource-constrained applications.
+    Deep neural networks (DNNs) often face significant performance drops when deployed in new domains unseen during training.
+    Existing unsupervised and weakly-supervised DNN adaptation approaches require slow, compute-intensive iterative optimization that takes the model offline and disrupts normal operation. To address this, we propose <strong>HyperUDA</strong> for <strong>zero-shot</strong> and <strong>SupportNet</strong> for <strong>few-shot</strong> DNN adaptation. Both approaches achieve fast, on-the-fly adaptation through a single forward pass. This makes them highly suitable for time-critical or resource-constrained applications. 
     </p>
     <p>
-    Application to Brain-Computer Interfaces (<strong>BCI</strong>): In online BCI settings, neural signals differ significantly between patients, and even within the same patient over time. Using our LoRA-hypernetwork framework, we perform <strong>unsupervised, on-device adaptation</strong> for new patients by processing a short segment of their unlabeled brain data. We generate LoRA adapters the model's last few layers in real time, enabling the BCI to stay accurate without disruptive calibration sessions. 
-    <!-- We implement this approach on an <strong>FPGA-based neural implant</strong> using <strong>TinyML</strong> techniques, achieving closed-loop, low-power operation in freely behaving rodents. -->
+    HyperUDA encodes unlabeled target data into a latent embedding, then feeds the embedding into a hypernetwork. The hypernetwork maps the embedding to a domain-conditioned weight delta for the base model. The hypernetwork, data encoder and base model are jointly trained on the task. HyperUDA adapts by modifying model weights.
     </p>
     <p>
-    This project led to my Bachelor's <a href="/assets/written_reports/mliufu_cs_thesis_20250425.pdf" style="color: blue; text-decoration: underline;">thesis</a> in CS. I'm currently working towards publication. 
+    SupportNet adapts classification networks. The SupportNet framework includes three modules - a support encoder, a task encoder and a classification head. During training, we first contrastively train the support encoder to encode domain-specific, task-agnostic information. We then freeze the support encoder and jointly train the task encoder and classification head on the classification task. The task encoder generates task embeddings useful for the specific task; we use the attention mechanism to project task embeddings from different domains into a domain-invariant subspace. SupportNet adapts by constructing domain-invariant data representations. 
+    </p>
+    <p>
+    We applied HyperUDA and SupportNet to build a self-calibrating brain computer interface (<strong>BCI</strong>). In BCI applications, brain signals can differ significantly between users, and even within the same user over time. We used HyperUDA and SupportNet to do on-device, on-the-fly adaptation of an edge-deployed BCI (a MSP430 microcontroller). We used [Lupe](https://github.com/mingyuan-xiang/lupe/tree/main) to convert trained PyTorch model to its optimized C representation, then deployed the C code on MSP430. 
     </p>
 </div>
 
