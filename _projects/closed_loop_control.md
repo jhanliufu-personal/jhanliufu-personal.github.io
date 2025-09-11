@@ -4,9 +4,8 @@ year: 2024
 location: University of Chicago
 title: "Online phase estimation for phase-locked brain stimulation"
 description: |
-    - Optimized and evaluated Fourier-based online phase estimation algorithms
-    - Built **CLC**, a closed-loop brain stimulation system supporting multiple Fourier-based phase estimators
-    - Used in **optogenetic** brain stimulation experiments to study prefrontal-hippocampal coordination
+    - Engineered a closed-loop neuroscience experiment platform that processes neural data at **30kHz** in real time, supported **phase-locked neural stimulation** that was used in 5 distinct experiment paradigms.
+    - Optimized phase estimation algorithms by simulating on **50+** hrs of neural recordings (rat LFP and human EEG)
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
 # publications: Liufu_2024a, Liufu_2024b
 lab: 

@@ -4,7 +4,7 @@ year: 2024
 location: University of Chicago
 title: Pixel-less artificial vision with hot-carrier bioelectronic interfaces
 description: |
-    - Developed ML methods for pixel-less pattern recognition and cursor tracking
+    - Compressed data footprint of pattern recognition by 10x using pixel-less data representation and spatiotemporal CNN.
     - Helped design and fabricate hot-carrier optoelectronic materials
 repository: ""
 lab: 

@@ -2,10 +2,9 @@
 layout: project
 year: 2024
 location: University of Chicago
-title: "DCTNet: Online phase estimation with dual-tree complex neural network"
+title: "DCTNet: Edge-deployed DNN for low-latency online phase estimation"
 description: |
-    - Built **DCTNet**, a dual-tree DNN with discrete cosine transform (DCT) layers for online phase estimation. 
-    - Deployed DCTNet on an **FPGA** for real-time validation.
+    - Reduced latency of online phase estimation **10x** by deploying a pre-trained DNN on embedded **FPGA** using HLS
 repository: "https://github.com/jhanliufu-personal/DCTNet"
 lab: 
 - Jai Yu

@@ -5,9 +5,9 @@ location: University of Chicago
 title: "On-the-fly DNN adaptation via hypernetwork and contrastive learning"
 # description: "Developed hypernetwork-based framework for generating LoRA matrices from unlabeled target-domain data, enabling rapid online adaptation of deep learning models. Applied here to self-calibrating BCIs."
 description: |
-    - Built **HyperUDA**, a zero-shot domain adaptation framework for DNNs using hypernetworks
-    - Built **SupportNet**, a few-shot adaptation framework using contrastive learning and attention
-    - Deployed on **MSP430** to build self-calibrating brain-computer interface (**BCI**)
+    - Cut online DNN adaptation time (hours → seconds) and data requirements (**zero-shot**) in unfamiliar data domains via **hypernetworks** and **meta learning**.
+    - Achieved **>10%** model accuracy gains from **<5** data samples in low data regimes using contrastive learning.
+    - Engineered self-calibrating **BCI**s using these methods, improved BCI robustness against signal drift.
 # slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
 repository: "https://github.com/jhanliufu-personal/HypernetBCI"
 lab: 
