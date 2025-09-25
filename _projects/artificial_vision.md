@@ -11,17 +11,17 @@ lab:
 - Bozhi Tian
 ---
 ## Project description
-<!-- <div style="font-size: 20px;">
+<div style="font-size: 20px;">
     <p>
-    Method to identify individual living cells in a group of cells can benefit wide-ranging experiments and applications. Such method will enable long-term tracking of individual cells and study of their changes over time. In this project, we explore a quantum sensing approach to individual cell identification. 
+    Conventional image sensing and classification rely heavily on pixel-based architectures. Each pixel must capture, store, and transmit discrete intensity values, which introduces substantial inefficiencies in speed, memory, and energy consumption. These limitations are especially pronounced in real-time applications, such as human–machine interfaces or neuromorphic bioelectronics, where low latency and high scalability are essential. Moreover, the rigid need for dense arrays of photodetectors increases hardware complexity and limits adaptability.
     </p>
     <p>
-    We inject nanodiamonds (NDs) into living cells and chemically bond the NDs into pairs. Nitrogen-vacancy (NV) centers on the NDs are optically addressable quantum sensors with resolvable spatial orientations. The relative angle bewteen each pair of NDs is randomly determined upon their bonding, and the angle will remain constant regardless of the pair's spatial location. The relative angles from all ND pairs in a cell forms a unique "barcode" that identifies the cell. 
+    To address these challenges, our project introduces a pixelless sensing and classification paradigm built on bio-inspired optoelectronic hardware. The hardware platform, a self-assembled Au–TiO₂ plasmonic metasurface, mimics the way natural leaves capture and distribute light without discrete pixels or wired interconnects. When illuminated, the metasurface generates distributed hot-carrier currents, which are then transduced into spatially varying voltage signals using a minimalist electrode array. This eliminates the need for pixelated detectors altogether while retaining high spatial information density
     </p>
     <p>
-    We developed algorithms to (1) uniquely resolve the relative angle between ND pairs with two or more NV centers on each ND and (2) non-deterministically resolve the angle between ND pairs with one NV center on each ND. The non-deterministic algorithm can resolve the angle between 1-on-1 ND pairs within a 5-degree range using less than 10 measurements.
+    On top of this hardware foundation, we developed an AI-assisted computational layer to decode and classify optical input patterns. Instead of processing raw pixel grids, our system interprets analog voltage traces from just four electrodes positioned at the corners of the device. We support efficient and accurate pattern recognition using temporal convolution and real-time cursor tracking using virtual pixel reconstruction. 
     </p>
-</div> -->
+</div>
 
 <!-- <div align="center">
     <img src="/assets/images/celltracking_graphical_abstract_1.png" alt="Example Image" width="800"/>
