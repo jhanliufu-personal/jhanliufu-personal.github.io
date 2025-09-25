@@ -26,13 +26,13 @@ lab:
 <div align="center">
     <img src="/assets/images/pixelless_overview.png" alt="Example Image" width="800"/>
     <p class="figure_caption">
-        <strong>Figure 1.</strong> Caption
+        <strong>Figure 1.</strong> We support pixelless computer vision by processing the raw voltage traces induced by optical stimuli. We support pattern recognition and cursor tracking. 
     </p>
 <div>
 
 <div align="center">
     <img src="/assets/images/pixelless_virtual_pixel.png" alt="Example Image" width="800"/>
     <p class="figure_caption">
-        <strong>Figure 2.</strong> Caption
+        <strong>Figure 2.</strong> We use regression methods to localize the optical stimuli with minimal overhead. The reconstructed patterns can be used in further processing.
     </p>
 <div>
