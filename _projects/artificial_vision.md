@@ -4,9 +4,9 @@ year: 2024
 location: University of Chicago
 title: Pixel-less artificial vision with hot-carrier bioelectronic interfaces
 description: |
-    - Compressed data footprint of pattern recognition by 10x using pixel-less data representation and spatiotemporal CNN.
+    - Compressed data footprint of pattern recognition by 10x using **pixel-less** data representation and spatiotemporal CNN.
     - Helped design and fabricate hot-carrier optoelectronic materials
-    - Publication under review at Nature Photonics
+    - Publication under review at **Nature Photonics**
 repository: ""
 lab: 
 - Bozhi Tian
