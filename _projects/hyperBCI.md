@@ -8,6 +8,7 @@ description: |
     - Cut online DNN adaptation time (hours → seconds) and data requirements (**zero-shot**) in unfamiliar data domains via **hypernetworks** and **meta learning**.
     - Achieved **>10%** model accuracy gains from **<5** data samples in low data regimes using contrastive learning.
     - Engineered self-calibrating **BCI**s using these methods, improved BCI robustness against signal drift.
+    - Publication under review at **ICLR** 2026.
 # slides: "/assets/slides/20240816_ai_for_bio_presentation.pdf"
 repository: "https://github.com/jhanliufu-personal/HypernetBCI"
 lab: 

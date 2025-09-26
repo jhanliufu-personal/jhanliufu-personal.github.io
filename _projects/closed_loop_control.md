@@ -6,6 +6,7 @@ title: "Online phase estimation for phase-locked brain stimulation"
 description: |
     - Engineered a closed-loop neuroscience experiment platform that processes neural data at **30kHz** in real time, supported **phase-locked neural stimulation** that was used in 5 distinct experiment paradigms.
     - Optimized phase estimation algorithms by simulating on **50+** hrs of neural recordings (rat LFP and human EEG)
+    - Published on Journal of Neural Engineering (JNE)
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
 # publications: Liufu_2024a, Liufu_2024b
 lab: 
