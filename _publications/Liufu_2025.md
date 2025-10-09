@@ -1,8 +1,8 @@
 ---
 layout: publication
-year: 2024
+year: 2025
 journal: Journal of Neural Engineering
-link: "https://www.biorxiv.org/content/10.1101/2024.08.24.609522v1"
+link: "https://iopscience.iop.org/article/10.1088/1741-2552/ae10e1"
 authors: Mengzhan Liufu, Zachary M. Leveroni, Sameera Shridhar, Nan Zhou, Jai Y. Yu#
 order: first
 title: Optimizing real-time phase detection in diverse rhythmic biological signals for phase-specific neuromodulation

@@ -8,7 +8,7 @@ description: |
     - Optimized phase estimation algorithms by simulating on **50+** hrs of neural recordings (rat LFP and human EEG)
     - Published on Journal of Neural Engineering (JNE)
 repository: "https://github.com/JhanLiufu/PhaseStim2022_Yu"
-# publications: Liufu_2024a, Liufu_2024b
+publications: Liufu_2024a, Liufu_2025
 lab: 
 - Jai Yu
 ---
