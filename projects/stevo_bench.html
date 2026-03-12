@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STEVO-Bench - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" class="current">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section detail-header">
+      <h1>STEVO-Bench: Benchmarking Video World Models on State Evolution Beyond the Pixel Frame</h1>
+      <ul>
+        <li>Designed a benchmark to evaluate whether <strong>video world models</strong> can simulate world dynamics <strong>beyond visible pixels</strong>, probing understanding of physical, chemical, and social state evolution.</li>
+        <li>Introduced <strong>observation control</strong> mechanisms — occlusion, camera lookaway, illumination dimming — to reveal whether models track hidden state or rely purely on visual extrapolation.</li>
+        <li>Covers <strong>225 tasks</strong> across 6 categories: scalar processes, few-object kinematics, structural/material transformations, intent-driven behavior, physical dynamics, and chemical/social world changes.</li>
+      </ul>
+      <div class="button-container">
+        <a href="https://glab-caltech.github.io/STEVOBench/" class="button" target="_blank" rel="noopener">Project Website</a>
+        <a href="https://github.com/jhanliufu-personal/STEVO-Bench" class="button" target="_blank" rel="noopener">💻 View Code</a>
+        <a href="https://huggingface.co/datasets/JhanLiufu/StEvo-Bench" class="button" target="_blank" rel="noopener">🤗 Dataset</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Project description</h2>
+      <div style="font-size: 1rem;">
+        <p>Modern video generation models can produce visually compelling sequences, but do they truly <em>understand</em> the world they depict? STEVO-Bench asks a harder question: can a video world model simulate state evolution that occurs <strong>beyond the pixel frame</strong>? When a reaction unfolds off-screen, when an object is occluded, or when the lights go out, the world keeps changing — a genuine world model should track that hidden state and reflect it when observation resumes.</p>
+        <p>The benchmark introduces <strong>observation control</strong> as a diagnostic tool. By selectively withholding visual information via occlusion, camera lookaway, and illumination dimming, we can distinguish models that reason about latent world state from those that merely hallucinate plausible-looking continuations. Each task presents a video segment followed by a controlled observation gap, then asks the model to predict what the world looks like when observation resumes.</p>
+        <p>The <strong>225 tasks</strong> span six categories chosen to cover diverse axes of state evolution: <em>scalar processes</em> (gradual accumulation), <em>few-object kinematics</em> (simple dynamics), <em>structural and material transformations</em> (irreversible changes such as melting or burning), <em>intent-driven behavior</em> (agent actions with goals), and broader physical, chemical, and social world dynamics. The dataset contains <strong>244 annotated examples</strong> hosted on Hugging Face, with evaluation code and a leaderboard on the project website.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
