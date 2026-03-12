@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HyperBCI - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" class="current">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section detail-header">
+      <h1>On-the-fly DNN adaptation via hypernetwork and contrastive learning</h1>
+      <ul>
+        <li>Cut online DNN adaptation time (hours → seconds) and data requirements (<strong>zero-shot</strong>) in unfamiliar data domains via <strong>hypernetworks</strong> and <strong>meta learning</strong>.</li>
+        <li>Achieved <strong>&gt;10%</strong> model accuracy gains from <strong>&lt;5</strong> data samples in low data regimes using contrastive learning.</li>
+        <li>Engineered self-calibrating <strong>BCI</strong>s using these methods, improved BCI robustness against signal drift.</li>
+        <!-- <li>Publication under review at <strong>ICLR</strong> 2026.</li> -->
+      </ul>
+      <div class="button-container">
+        <a href="https://people.cs.uchicago.edu/~hankhoffmann/" class="button" target="_blank" rel="noopener">Henry Hoffmann Lab</a>
+        <a href="https://github.com/jhanliufu-personal/HypernetBCI" class="button" target="_blank" rel="noopener">💻 View Code</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Project description</h2>
+      <div style="font-size: 1rem;">
+        <p>Deep neural networks (DNNs) often face significant performance drops when deployed in new domains unseen during training. Existing unsupervised and weakly-supervised DNN adaptation approaches require slow, compute-intensive iterative optimization that takes the model offline and disrupts normal operation. To address this, we propose <strong>HyperUDA</strong> for <strong>zero-shot</strong> and <strong>SupportNet</strong> for <strong>few-shot</strong> DNN adaptation. Both approaches achieve fast, on-the-fly adaptation through a single forward pass. This makes them highly suitable for time-critical or resource-constrained applications.</p>
+        <p>HyperUDA adapts by modifying model weights. It encodes unlabeled target data into a latent embedding, then feeds the embedding into a hypernetwork. The hypernetwork maps the embedding to a domain-conditioned weight delta for the base model. The hypernetwork, data encoder and base model are jointly trained on the task.</p>
+        <p>SupportNet adapts classification networks by constructing domain-invariant data representations. The framework includes three modules - a support encoder, a task encoder and a classification head. During training, we first contrastively train the support encoder to encode domain-specific, task-agnostic information. We then freeze the support encoder and jointly train the task encoder and classification head on the classification task. The task encoder generates task embeddings useful for the specific task; we use the attention mechanism to project task embeddings from different domains into a domain-invariant subspace.</p>
+        <p>We applied HyperUDA and SupportNet to build a self-calibrating brain computer interface (<strong>BCI</strong>). In BCI applications, brain signals can differ significantly between users, and even within the same user over time. We used HyperUDA and SupportNet to do on-device, on-the-fly adaptation of an edge-deployed BCI (a MSP430 microcontroller). We used <a href="https://github.com/mingyuan-xiang/lupe/tree/main" target="_blank" rel="noopener">Lupe</a> to convert trained PyTorch model to its optimized C representation, then deployed the C code on MSP430.</p>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <img src="/assets/images/hyperBCI_graphical_abstract.png" alt="HyperBCI schematic" style="max-width: 100%; border-radius: 8px;">
+        <p style="text-align: left; font-size: 0.9rem; color: #666; margin-top: 0.5rem;"><strong>Figure 1.</strong> Schematic of HyperBCI, a hypernetwork-based self-calibrating BCI system. The primary network and the hypernetwork are jointly pre-trained on a pool of existing users. During inference time, unsupervised adaptation is achieved through the hypernetwork which is consisted of the encoder and the weight generator. The encoder processes unlabeled data from new user and generates an embedding, which instructs the weight generator to produce near-optimal model weights for the new subject.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

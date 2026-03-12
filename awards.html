@@ -1,31 +1,82 @@
----
-layout: default
-title: Awards
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awards - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html" class="current">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
 
-<div class="content-section">
-    <div class="section-title">Awards & Recognition</div>
-    
-    {% for award in site.data.awards %}
-        <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
-            <h3 class="entry-title">
-                {% if award.link %}
-                    <a href="{{ award.link }}">{{ award.name }}</a>
-                {% else %}
-                    {{ award.name }}
-                {% endif %}
-            </h3>
-            <p class="text-muted mb-2">{{ award.year }}</p>
-            <!-- show mentor's name if any -->
-            {% assign mentor = award.mentor %}
-            {% if mentor %}
-                <p>
-                    <strong>Mentor:</strong> 
-                    <a href="{{ site.data.research_labs[mentor].lab_url }}">
-                        {{ mentor }}
-                    </a>   
-                </p>
-            {% endif %}
-        </div>
-    {% endfor %}
-</div>
+    <div class="content-section">
+      <span class="section-title">Awards &amp; Recognition</span>
+
+      <!-- NK Cheung Chemistry Research Fellowship (2024) -->
+      <div class="entry">
+        <h3 class="entry-title">NK Cheung Chemistry Research Fellowship</h3>
+        <p class="text-muted mb-1">2024</p>
+        <p><strong>Mentor:</strong> <a href="https://tianlab.uchicago.edu/" target="_blank" rel="noopener">Bozhi Tian</a></p>
+      </div>
+
+      <!-- Fellowship in ML/AI in biological and health sciences (2024) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="https://uchicago.joinhandshake.com/stu/jobs/8868128" target="_blank" rel="noopener">Fellowship in application of machine learning and AI in biological and health sciences</a></h3>
+        <p class="text-muted mb-1">2024</p>
+        <p><strong>Mentor:</strong> <a href="https://people.cs.uchicago.edu/~hankhoffmann/" target="_blank" rel="noopener">Henry Hoffmann</a></p>
+      </div>
+
+      <!-- TPCN (2023) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="https://neuroscience.uchicago.edu/training-program-theory-and-computation-next-generation-neuroscientists" target="_blank" rel="noopener">The Training Program in Theory and Computation for Next Generation Neuroscientists (TPCN)</a></h3>
+        <p class="text-muted mb-1">2023</p>
+        <p><strong>Mentor:</strong> <a href="https://voices.uchicago.edu/jaiyu/" target="_blank" rel="noopener">Jai Yu</a></p>
+      </div>
+
+      <!-- Quad Faculty Research Grant (2023) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="https://ccrf.uchicago.edu/undergraduate-research/quad-faculty-research-grant-program" target="_blank" rel="noopener">Quad Faculty Research Grant</a></h3>
+        <p class="text-muted mb-1">2023</p>
+        <p><strong>Mentor:</strong> <a href="https://tianlab.uchicago.edu/" target="_blank" rel="noopener">Bozhi Tian</a></p>
+      </div>
+
+      <!-- Quad Summer Undergraduate Research Scholar (2023) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="https://ccrf.uchicago.edu/undergraduate-research/quad-summer-undergraduate-research-scholars" target="_blank" rel="noopener">Quad Summer Undergraduate Research Scholar</a></h3>
+        <p class="text-muted mb-1">2023</p>
+        <p><strong>Mentor:</strong> <a href="https://voices.uchicago.edu/jaiyu/" target="_blank" rel="noopener">Jai Yu</a></p>
+      </div>
+
+      <!-- Jeff Metcalf Fellowship (2022) -->
+      <div class="entry">
+        <h3 class="entry-title">Jeff Metcalf Fellowship</h3>
+        <p class="text-muted mb-1">2022</p>
+        <p><strong>Mentor:</strong> <a href="https://voices.uchicago.edu/jaiyu/" target="_blank" rel="noopener">Jai Yu</a></p>
+      </div>
+
+      <!-- University of Chicago Dean's List (2022) -->
+      <div class="entry">
+        <h3 class="entry-title">University of Chicago Dean's List</h3>
+        <p class="text-muted mb-1">2022</p>
+      </div>
+
+      <!-- Data Science Institute Summer Research Scholar (2022) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="https://datascience.uchicago.edu/education/summerlab/" target="_blank" rel="noopener">Data Science Institute Summer Research Scholar</a></h3>
+        <p class="text-muted mb-1">2022</p>
+        <p><strong>Mentor:</strong> <a href="https://voices.uchicago.edu/jaiyu/" target="_blank" rel="noopener">Jai Yu</a></p>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

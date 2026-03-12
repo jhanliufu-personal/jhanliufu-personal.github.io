@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DCTNet - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" class="current">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section detail-header">
+      <h1>DCTNet: Edge-deployed DNN for low-latency online phase estimation</h1>
+      <ul>
+        <li>Reduced latency of online phase estimation <strong>10x</strong> by deploying a pre-trained DNN on embedded <strong>FPGA</strong> using HLS.</li>
+        <li>Publication under review at <strong>IEEE</strong> Transactions on Biomedical Engineering.</li>
+      </ul>
+      <div class="button-container">
+        <a href="https://voices.uchicago.edu/jaiyu/" class="button" target="_blank" rel="noopener">Jai Yu Lab</a>
+        <a href="https://github.com/jhanliufu-personal/DCTNet" class="button" target="_blank" rel="noopener">💻 View Code</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Project description</h2>
+      <div style="font-size: 1rem;">
+        <p>The brain is full of rhythmic electrical activity, known as neural oscillations. These rhythms play a role in everything from memory to movement, and timing is key: many neurotechnology applications, like brain–computer interfaces and therapeutic stimulation, depend on knowing the exact "phase" of these rhythms in real time. Traditional mathematical methods can estimate phase, but they tend to be slow, introduce delays, and struggle when deployed on small, portable hardware.</p>
+        <p>In this project, we developed a lightweight deep learning model that can estimate the instantaneous phase of brain signals quickly and accurately. Inspired by wavelet transforms, our dual-branch neural network learns to process neural data in two streams—real and imaginary components—while also using a compact frequency-based representation (via the Discrete Cosine Transform). This design not only improves accuracy over existing approaches but also keeps the model extremely small, with fewer than 5,000 parameters.</p>
+        <p>Because of its efficiency, the model can run on resource-limited devices like FPGAs (field-programmable gate arrays), which are often used in portable neuroscience hardware. In tests, it achieved more accurate and lower-latency phase estimation than both traditional signal-processing methods and larger neural networks. This makes it a strong candidate for next-generation real-time brain–computer interfaces and neuromodulation systems that need fast, precise signal tracking in practical, wearable setups.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

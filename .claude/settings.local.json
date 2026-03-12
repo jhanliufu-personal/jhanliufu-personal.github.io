@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//g/My Drive/RandomRepos/jhanliufu-personal.github.io/**)",
+      "Bash(done)",
+      "Bash(mkdir -p \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/projects\" && mkdir -p \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/publications\" && echo \"Created directories\")",
+      "Bash(echo \"=== Root pages ===\" && ls \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/\"*.html && echo \"=== projects/ ===\" && ls \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/projects/\" && echo \"=== publications/ ===\" && ls \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/publications/\" && echo \"=== CSS ===\" && ls \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io/assets/css/\")",
+      "Bash(cd \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io\" && rm -rf _layouts _includes _data _projects _publications _posts _authors _sass _site .jekyll-cache _config.yml assets/css/styles.scss)",
+      "Bash(cd \"G:/My Drive/RandomRepos/jhanliufu-personal.github.io\" && find _layouts -type f -delete && rmdir _layouts 2>/dev/null; find _includes -type f -delete && rmdir _includes 2>/dev/null; find _data -type f -delete && rmdir _data 2>/dev/null; find _projects -type f -delete && rmdir _projects 2>/dev/null; find _publications -type f -delete && rmdir _publications 2>/dev/null; find _posts -type f -delete && rmdir _posts 2>/dev/null; find _authors -type f -delete && rmdir _authors 2>/dev/null; find _sass -type f -delete && rmdir _sass 2>/dev/null; find .jekyll-cache -type f -delete 2>/dev/null; rm -f _config.yml assets/css/styles.scss; echo \"done\")",
+      "Bash(powershell -Command \"\n\\\\$base = 'G:\\\\\\\\My Drive\\\\\\\\RandomRepos\\\\\\\\jhanliufu-personal.github.io'\n\\\\$dirs = @\\('_layouts','_includes','_data','_projects','_publications','_posts','_authors','_sass','_site','.jekyll-cache'\\)\n\\\\$files = @\\('_config.yml','assets\\\\\\\\css\\\\\\\\styles.scss'\\)\nforeach \\(\\\\$d in \\\\$dirs\\) {\n    \\\\$p = Join-Path \\\\$base \\\\$d\n    if \\(Test-Path \\\\$p\\) { Remove-Item \\\\$p -Recurse -Force; Write-Host \\\\\"Removed \\\\$d\\\\\" }\n}\nforeach \\(\\\\$f in \\\\$files\\) {\n    \\\\$p = Join-Path \\\\$base \\\\$f\n    if \\(Test-Path \\\\$p\\) { Remove-Item \\\\$p -Force; Write-Host \\\\\"Removed \\\\$f\\\\\" }\n}\nWrite-Host 'Done'\n\")"
+    ]
+  }
+}

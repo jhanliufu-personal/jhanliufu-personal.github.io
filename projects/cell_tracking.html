@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cell Tracking - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" class="current">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section detail-header">
+      <h1>"Barcoding" cells using nanodiamond quantum sensor</h1>
+      <ul>
+        <li>Built an algorithm to identify and track living cells using paired nanodiamonds as quantum sensor.</li>
+        <li>Works by resolving the set of angles between paired nanodiamonds.</li>
+      </ul>
+      <div class="button-container">
+        <a href="https://maurer-lab.com/" class="button" target="_blank" rel="noopener">Peter Maurer Lab</a>
+        <a href="/assets/slides/20240129_celltracking_update.pdf" class="button" target="_blank" rel="noopener">📊 View Slides</a>
+        <a href="https://github.com/JhanLiufu/CellBarcoding2023_Maurer/tree/master" class="button" target="_blank" rel="noopener">💻 View Code</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Project description</h2>
+      <div style="font-size: 1rem;">
+        <p>Method to identify individual living cells in a group of cells can benefit wide-ranging experiments and applications. Such method will enable long-term tracking of individual cells and study of their changes over time. In this project, we explore a quantum sensing approach to individual cell identification.</p>
+        <p>We inject nanodiamonds (NDs) into living cells and chemically bond the NDs into pairs. Nitrogen-vacancy (NV) centers on the NDs are optically addressable quantum sensors with resolvable spatial orientations. The relative angle between each pair of NDs is randomly determined upon their bonding, and the angle will remain constant regardless of the pair's spatial location. The relative angles from all ND pairs in a cell forms a unique "barcode" that identifies the cell.</p>
+        <p>We developed algorithms to (1) uniquely resolve the relative angle between ND pairs with two or more NV centers on each ND and (2) non-deterministically resolve the angle between ND pairs with one NV center on each ND. The non-deterministic algorithm can resolve the angle between 1-on-1 ND pairs within a 5-degree range using less than 10 measurements.</p>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <img src="/assets/images/celltracking_graphical_abstract_1.png" alt="Cell tracking nanodiamonds" style="max-width: 100%; border-radius: 8px;">
+        <p class="figure_caption"><strong>Figure 1.</strong> Nanodiamonds (NDs) as quantum sensors for cell identification. (A) The same group of cells have changed location over one week. Identifying and tracking individual cells is a non-trivial challenge. (B) NDs are chemically bonded into pairs. Each ND contains a nitrogen-vacancy (NV) center with unique spatial orientation. (C) The relative angle between each pair of NDs is randomly determined upon chemical bonding and will stay constant.</p>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <img src="/assets/images/celltracking_graphical_abstract_2.png" alt="Cell barcode algorithm" style="max-width: 100%; border-radius: 8px;">
+        <p class="figure_caption"><strong>Figure 2.</strong> Schematic of the proposed "barcode" and an algorithm to resolve relative angle. (A) Each ND pair within a cell has a unique and constant relative angle between its two NVs. With <em>n</em> ND pairs, the cell is associated with a set of <em>n</em> unique angles, which we refer to as the cell's "barcode". (B) and (C) show an algorithm simulation of resolving the angle between two example NVs. The estimated angle approaches the true angle with more measurements, and the error bound decreases simultaneously.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

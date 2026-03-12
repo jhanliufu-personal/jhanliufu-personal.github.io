@@ -1,60 +1,135 @@
----
-layout: default
-title: Projects
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html" class="current">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
 
-{% for loc in site.data.research_locations %}
-  <div class="content-section">
-    <div class="section-title">
-      {{ loc.start_year }}-{{ loc.end_year }}, {{ loc.location }}
+    <!-- Group 1: University of Chicago -->
+    <div class="content-section">
+      <span class="section-title">2021–2025, University of Chicago</span>
+
+      <!-- hyperBCI (2025) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/hyperBCI.html">On-the-fly DNN adaptation via hypernetwork and contrastive learning</a></h3>
+        <ul class="mb-2">
+          <li>Cut online DNN adaptation time (hours → seconds) and data requirements (<strong>zero-shot</strong>) in unfamiliar data domains via <strong>hypernetworks</strong> and <strong>meta learning</strong>.</li>
+          <li>Achieved <strong>&gt;10%</strong> model accuracy gains from <strong>&lt;5</strong> data samples in low data regimes using contrastive learning.</li>
+          <li>Engineered self-calibrating <strong>BCI</strong>s using these methods, improved BCI robustness against signal drift.</li>
+          <li>Publication under review at <strong>ICLR</strong> 2026.</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/hyperBCI.html" class="button">Details</a>
+          <a href="https://people.cs.uchicago.edu/~hankhoffmann/" class="button" target="_blank" rel="noopener">Henry Hoffmann Lab</a>
+          <a href="https://github.com/jhanliufu-personal/HypernetBCI" class="button" target="_blank" rel="noopener">💻 Code</a>
+        </div>
+      </div>
+
+      <!-- artificial_vision (2024) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/artificial_vision.html">Pixel-less artificial vision with hot-carrier bioelectronic interfaces</a></h3>
+        <ul class="mb-2">
+          <li>Compressed data footprint of pattern recognition by 10x using <strong>pixel-less</strong> data representation and spatiotemporal CNN.</li>
+          <li>Helped design and fabricate hot-carrier optoelectronic materials.</li>
+          <li>Publication under review at <strong>Nature Photonics</strong>.</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/artificial_vision.html" class="button">Details</a>
+          <a href="https://tianlab.uchicago.edu/" class="button" target="_blank" rel="noopener">Bozhi Tian Lab</a>
+        </div>
+      </div>
+
+      <!-- closed_loop_control (2024) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/closed_loop_control.html">Online phase estimation for phase-locked brain stimulation</a></h3>
+        <ul class="mb-2">
+          <li>Engineered a closed-loop neuroscience experiment platform that processes neural data at <strong>30kHz</strong> in real time, supported <strong>phase-locked neural stimulation</strong> that was used in 5 distinct experiment paradigms.</li>
+          <li>Optimized phase estimation algorithms by simulating on <strong>50+</strong> hrs of neural recordings (rat LFP and human EEG).</li>
+          <li>Published on Journal of Neural Engineering (JNE).</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/closed_loop_control.html" class="button">Details</a>
+          <a href="https://voices.uchicago.edu/jaiyu/" class="button" target="_blank" rel="noopener">Jai Yu Lab</a>
+          <a href="/publications/Liufu_2024a.html" class="button">📄 Liufu 2024a</a>
+          <a href="/publications/Liufu_2025.html" class="button">📄 Liufu 2025</a>
+          <a href="https://github.com/JhanLiufu/PhaseStim2022_Yu" class="button" target="_blank" rel="noopener">💻 Code</a>
+        </div>
+      </div>
+
+      <!-- dctnet (2024) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/dctnet.html">DCTNet: Edge-deployed DNN for low-latency online phase estimation</a></h3>
+        <ul class="mb-2">
+          <li>Reduced latency of online phase estimation <strong>10x</strong> by deploying a pre-trained DNN on embedded <strong>FPGA</strong> using HLS.</li>
+          <li>Publication under review at <strong>IEEE</strong> Transactions on Biomedical Engineering.</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/dctnet.html" class="button">Details</a>
+          <a href="https://voices.uchicago.edu/jaiyu/" class="button" target="_blank" rel="noopener">Jai Yu Lab</a>
+          <a href="https://github.com/jhanliufu-personal/DCTNet" class="button" target="_blank" rel="noopener">💻 Code</a>
+        </div>
+      </div>
+
+      <!-- cell_tracking (2023) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/cell_tracking.html">"Barcoding" cells using nanodiamond quantum sensor</a></h3>
+        <ul class="mb-2">
+          <li>Built an algorithm to identify and track living cells using paired nanodiamonds as quantum sensor.</li>
+          <li>Works by resolving the set of angles between paired nanodiamonds.</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/cell_tracking.html" class="button">Details</a>
+          <a href="https://maurer-lab.com/" class="button" target="_blank" rel="noopener">Peter Maurer Lab</a>
+          <a href="/assets/slides/20240129_celltracking_update.pdf" class="button" target="_blank" rel="noopener">📊 Slides</a>
+          <a href="https://github.com/JhanLiufu/CellBarcoding2023_Maurer/tree/master" class="button" target="_blank" rel="noopener">💻 Code</a>
+        </div>
+      </div>
+
+      <!-- drop_connect (2023) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/drop_connect.html">DropConnect: Training Fault-tolerant DNNs for fault-prone RRAM deployment</a></h3>
+        <ul class="mb-2">
+          <li>Developed <strong>DropConnect</strong>, a framework for training RRAM-fault tolerant DNNs.</li>
+          <li>Injected Linear Bottleneck layer into DNNs to improve fault tolerance.</li>
+        </ul>
+        <div class="button-container">
+          <a href="/projects/drop_connect.html" class="button">Details</a>
+          <a href="https://people.cs.uchicago.edu/~yanjingl/" class="button" target="_blank" rel="noopener">Yanjing Li Lab</a>
+          <a href="https://github.com/JhanLiufu/DropConnect2023_Li" class="button" target="_blank" rel="noopener">💻 Code</a>
+        </div>
+      </div>
+
     </div>
 
-    {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
-    {% for project in sorted_projects %}
-      {% if project.location == loc.location %}
-        <div class="mb-3" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
-          <h3 class="entry-title">
-            <a href="{{ project.url }}">
-              {{ project.title }}
-            </a>
-          </h3>
-          <p class="text-muted mb-2">
-            {{ project.description | markdownify }}
-          </p>
+    <!-- Group 2: Guangzhou, China -->
+    <div class="content-section">
+      <span class="section-title">2018–2020, Guangzhou, China</span>
 
-          <div class="button-container">
-            <a href="{{ project.url }}" class="button button-small">Details</a>
-            
-            {% for lab in project.lab %}
-              {% assign lab_data = site.data.research_labs[lab] %}
-              <a href="{{ lab_data.lab_url }}" class="button button-small">{{ lab }} Lab</a>
-            {% endfor %}
-
-            {% if project.publications %}
-              {% assign relevant_pubs = project.publications %}
-              {% for pub in site.publications %}
-                {% if relevant_pubs contains pub.slug %}
-                  {% assign name = pub.slug | split: '_' | first %}
-                  {% assign year = pub.slug | split: '_' | last %}
-                  <a href="{{ pub.url }}" class="button button-small">📄 {{ name }} {{ year }}</a>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-
-            {% if project.slides %}
-              <a href="{{ project.slides }}" class="button button-small">📊 Slides</a>
-            {% endif %}
-
-            {% if project.repository %}
-              <a href="{{ project.repository }}" class="button button-small">💻 Code</a>
-            {% endif %}
-
-            {% if project.written_report %}
-              <a href="{{ project.written_report }}" class="button button-small">📖 Report</a>
-            {% endif %}
-          </div>
+      <!-- sensorimotor_adaptation (2020) -->
+      <div class="entry">
+        <h3 class="entry-title"><a href="/projects/sensorimotor_adaptation.html">Neural correlates of implicit and explicit sensorimotor learning</a></h3>
+        <p class="mb-2">Investigated and theorized the interaction between implicit sensorimotor adaptation and explicit motor task learning.</p>
+        <div class="button-container">
+          <a href="/projects/sensorimotor_adaptation.html" class="button">Details</a>
+          <a href="http://juanchenpsy.scnu.edu.cn/" class="button" target="_blank" rel="noopener">Juan Chen Lab</a>
+          <a href="https://github.com/JhanLiufu/ImplicitAdaptation2021_Chen" class="button" target="_blank" rel="noopener">💻 Code</a>
         </div>
-      {% endif %}
-    {% endfor %}
+      </div>
+
+    </div>
+
   </div>
-{% endfor %}
+</body>
+</html>

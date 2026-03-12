@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liufu 2025 - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html" class="current">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section">
+      <h1 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem; line-height: 1.3;">Optimizing real-time phase detection in diverse rhythmic biological signals for phase-specific neuromodulation</h1>
+      <p class="text-muted mb-2"><strong>Mengzhan Liufu</strong>, Zachary M. Leveroni, Sameera Shridhar, Nan Zhou, Jai Y. Yu#</p>
+      <p class="mb-2"><strong>Journal:</strong> <em>Journal of Neural Engineering</em> (2025)</p>
+      <div class="button-container">
+        <a href="https://iopscience.iop.org/article/10.1088/1741-2552/ae10e1" class="button" target="_blank" rel="noopener">📄 View Paper</a>
+        <a href="https://github.com/JhanLiufu/PhaseStimAnalysis2022_Yu" class="button" target="_blank" rel="noopener">💻 View Code</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Abstract</h2>
+      <p>
+        Closed-loop, phase-specific neurostimulation is a powerful method to modulate ongoing brain activity for clinical and research applications. Phase-specific stimulation relies on estimating the phase of an ongoing oscillation in real time and issuing a control command at a target phase. Phase detection algorithms based on Fast Fourier transform (FFT) are widely used due to their computational efficiency and robustness. However, it is unclear how algorithm performance depends on the spectral properties of the input signal and how algorithm parameters can be optimized. We used offline simulation to evaluate the performance of three algorithms (endpoint-corrected Hilbert Transform, Hilbert Transform and phase mapping) on three rhythmic biological signals with distinct spectral properties (rodent hippocampal theta potential, human EEG alpha and human essential tremor). First, we found that algorithm performance was more strongly influenced by signal amplitude and frequency variation compared with signal to noise ratio. Second, our simulations showed that the size of the data window for phase estimation was critical for the performance of FFT-based algorithms, where the optimal data window corresponds to the period of the oscillation. We validated this prediction with real time phase detection of hippocampal theta oscillations in freely behaving rats performing spatial navigation. Our findings define the relationship between signal properties and algorithm performance and provide a convenient method for optimizing FFT-based phase detection algorithms.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
