@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma 2026 - Jhan Liufu</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/icons.js" defer></script>
+</head>
+<body>
+  <div class="nav-tabs">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html" class="current">Publications</a>
+      <a href="/awards.html">Awards</a>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="content-section">
+      <h1 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem; line-height: 1.3;">Out of Sight, Out of Mind? Evaluating State Evolution in Video World Models</h1>
+      <p class="text-muted mb-2">Ziqi Ma*, <strong>Mengzhan Liufu*</strong>, Georgia Gkioxari. *equal contributors</p>
+      <p class="mb-2"><strong>Preprint:</strong> <em>arXiv</em> (2026)</p>
+      <div class="button-container">
+        <a href="https://arxiv.org/abs/2603.13215" class="button" target="_blank" rel="noopener">📄 View Paper</a>
+        <a href="https://glab-caltech.github.io/STEVOBench/" class="button" target="_blank" rel="noopener">Project Website</a>
+        <a href="https://github.com/jhanliufu-personal/STEVO-Bench" class="button" target="_blank" rel="noopener"><span class="icon-github"></span>View Code</a>
+        <a href="https://huggingface.co/datasets/JhanLiufu/StEvo-Bench" class="button" target="_blank" rel="noopener">🤗 Dataset</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Abstract</h2>
+      <p>
+        We introduce STEVO-Bench, a benchmark that evaluates whether video world models can maintain accurate state evolution independently of visual observation. The core insight is that a genuine world model should track latent world state even when observation is withheld — when a reaction unfolds off-screen, when an object is occluded, or when illumination is removed, the world keeps changing and the model should reflect that change when observation resumes. To operationalize this, we introduce <em>observation control</em> as a diagnostic tool: by selectively withholding visual information via occluder insertion, camera repositioning, and illumination dimming, we can distinguish models that reason about hidden state from those that merely hallucinate plausible-looking continuations. Each task presents a video segment followed by a controlled observation gap, then asks the model to predict the world state when observation resumes. The 225 tasks span six categories covering diverse axes of state evolution: scalar processes, few-object kinematics, structural and material transformations, intent-driven behavior, and broader physical, chemical, and social world dynamics. Our evaluation of current video generation models reveals that they struggle to decouple state changes from visual observation, pointing to fundamental limitations in how these models represent and propagate world state.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
