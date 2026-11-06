@@ -205,6 +205,9 @@ body {
   border: 1px solid var(--border-color);
   transition: all 0.15s ease;
   white-space: nowrap;
+}
+
+.intro-sidebar .button {
   width: 100%;
   text-align: center;
   box-sizing: border-box;
